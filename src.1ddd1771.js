@@ -11,8 +11,8 @@ var e,t=arguments[3];!function(t,r){"object"==typeof exports&&"object"==typeof m
 },{"handlebars/dist/handlebars.runtime":"pAws"}],"i0CD":[function(require,module,exports) {
 "use strict";var e=u(require("../menu.json")),t=u(require("../templates/menu-temp.hbs"));function u(e){return e&&e.__esModule?e:{default:e}}const n=document.querySelector(".menu"),r=o(e.default);function o(e){return e.map(t.default).join("")}o(e.default),n.insertAdjacentHTML("beforeend",r);
 },{"../menu.json":"mA8c","../templates/menu-temp.hbs":"S0A0"}],"MoVy":[function(require,module,exports) {
-const e={LIGHT:"light-theme",DARK:"dark-theme"};
+const e={LIGHT:"light-theme",DARK:"dark-theme"},t={body:document.querySelector("body"),switch:document.querySelector(".theme-switch__toggle")};function c(c){t.body.classList.toggle(e.DARK),t.body.classList.toggle(e.LIGHT),t.switch.checked?localStorage.setItem("theme",e.DARK):(localStorage.removeItem("theme",e.DARK),localStorage.setItem("theme",e.LIGHT))}t.switch.addEventListener("change",c);const o=localStorage.getItem("theme");o===e.DARK&&(t.body.classList.add(e.DARK),t.switch.checked=!0);
 },{}],"Focm":[function(require,module,exports) {
 "use strict";require("./sass/main.scss"),require("./js/menu.js"),require("./js/localstorage.js");
 },{"./sass/main.scss":"clu1","./js/menu.js":"i0CD","./js/localstorage.js":"MoVy"}]},{},["Focm"], null)
-//# sourceMappingURL=/goit-js-hw-10-food-service/src.096dc1be.js.map
+//# sourceMappingURL=/goit-js-hw-10-food-service/src.1ddd1771.js.map
